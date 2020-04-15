@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function MostrarNome(nome="fulano", idade=10) {
+        //     console.log(nome, idade)
+        // }
+        // MostrarNome("Nos", 13);
+        // MostrarNome("Tu", 87);
+        // MostrarNome("Eu", 92);
+        
+        
+        // var idade = parseInt(prompt("Digite sua idade"))
+        // function verificarIdade(idade=0) {
+        //     if (idade>=18) {
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // }
+        // if (verificarIdade(idade==true)) {
+        //     console.log("Voce entrou no pornhub")
+        // }
+        // else{
+        //     console.log("Voce nao pode entrar no pornhub")
+        //}
+
+        let tipo = String(prompt("Soma/Subtracao/Divisao/Multiplicacao"))
+        let n1 = parseInt(prompt("Digite seu primeiro numero"))
+        let n2 = parseInt(prompt("Digite o segundo numero"))
+
+        function calculo(tipo, n1, n2){
+            if (tipo == "soma") {
+                return n1 + n2 
+            }
+            else if(tipo == "subtracao"){
+                return n1 - n2
+            }
+            else if(tipo == "divisao"){
+                return n1 / n2
+            }
+            else{
+                return n1 * n2
+            }
+        }
+        console.log(calculo(tipo, n1, n2))
+    </script>
+</body>
+</html>

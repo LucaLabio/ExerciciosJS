@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n1 = [];
+        pares=[];
+        impares=[];
+        for (var i = 0; i < 11; i++) {
+            n1.push(parseInt(Math.random() * 101));
+            console.log(n1[i])
+            if (n1[i] % 2 == 0) {
+                pares.push(n1[i]);
+            }
+            else{
+                impares.push(n1[i]);
+            }
+        }
+        console.log(`Os numeros pares sao ${pares}`)
+        console.log(`Os numeros impares sao ${impares}`)
+    </script>
+</body>
+</html>
